@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Themes {
-  final lightTheme = ThemeData.light().copyWith();
-
-  final darkTheme = ThemeData.dark().copyWith(
+  late final lightTheme = ThemeData.light().copyWith(
+    useMaterial3: true,
     textTheme: TextTheme(
-      titleMedium: TextStyle(),
+      titleMedium: GoogleFonts.bangers(fontSize: 34),
+    ),
+  );
+
+  late final darkTheme = ThemeData.dark().copyWith(
+    useMaterial3: true,
+    textTheme: TextTheme(
+      titleMedium: GoogleFonts.bangers(fontSize: 34),
     ),
   );
 
