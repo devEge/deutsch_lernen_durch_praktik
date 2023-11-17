@@ -10,6 +10,19 @@ class AlsWennPraktikHomeScreen extends StatefulWidget {
 class _AlsWennPraktikHomeScreenState extends State<AlsWennPraktikHomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            children: [
+              Text(
+                'Als Und Wenn Übung!',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }

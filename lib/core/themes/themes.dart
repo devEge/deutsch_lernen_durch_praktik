@@ -3,7 +3,11 @@ import 'package:flutter/material.dart';
 class Themes {
   final lightTheme = ThemeData.light().copyWith();
 
-  final darkTheme = ThemeData.dark().copyWith();
+  final darkTheme = ThemeData.dark().copyWith(
+    textTheme: TextTheme(
+      titleMedium: TextStyle(),
+    ),
+  );
 
   ThemeData? getChosenTheme(String chosenTheme) {
     switch (chosenTheme) {

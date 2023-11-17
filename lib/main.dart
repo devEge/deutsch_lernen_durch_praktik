@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Deutsch Lernen Durch Hören',
+      debugShowCheckedModeBanner: false,
       theme: _themes.getChosenTheme(_localStorageService.getChosenTheme()),
       initialRoute: '/als_wenn_praktik_home_screen',
       getPages: [
