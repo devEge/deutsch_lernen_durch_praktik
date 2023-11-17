@@ -1,0 +1,5 @@
+Read from storage (Theme):
+    dark  = Dark Theme Selected
+    light = Light Theme Selected
+
+    GetStorage().read('chosenTheme');
